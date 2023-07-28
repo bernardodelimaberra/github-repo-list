@@ -1,16 +1,22 @@
 import React from 'react';
+import { Button } from 'primereact/button';
 
-const Pagination = ({ onPageChange, currentPage, totalPages }) => {
+const Pagination = ({ onPageChange, links }) => {
   return (
-    <div>
-      <button onClick={() => onPageChange(currentPage - 1)} disabled={currentPage === 1}>
+    <span className="button-container">
+      <Button onClick={() => onPageChange(links.first)} disabled={!(links && links.first)}>
+        First
+      </Button>
+      <Button onClick={() => onPageChange(links.prev)} disabled={!(links && links.prev)}>
         Previous
-      </button>
-      <span>{currentPage}</span>
-      <button onClick={() => onPageChange(currentPage + 1)} disabled={currentPage === totalPages}>
+      </Button>
+      <Button onClick={() => onPageChange(links.next)} disabled={!(links && links.next)}>
         Next
-      </button>
-    </div>
+      </Button>
+      <Button onClick={() => onPageChange(links.last)} disabled={!(links && links.last)}>
+        Last
+      </Button>
+    </span>
   );
 };
 

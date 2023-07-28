@@ -7,9 +7,14 @@ export const fetchUserInfo = async (username) => {
   return response.data;
 };
 
-export const fetchUserRepositories = async (username, page = 1, perPage = 10) => {
+export const fetchUserRepositories = async (username, pageUrl, page = 1, perPage = 5) => {
+  if (pageUrl) {
+    const response = await axios.get(pageUrl);
+    return response;
+  }
+  
   const response = await axios.get(
     `${GITHUB_API_BASE_URL}/users/${username}/repos?page=${page}&per_page=${perPage}`
   );
-  return response.data;
+  return response;
 };

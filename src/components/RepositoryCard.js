@@ -1,12 +1,15 @@
 import React from 'react';
+import { Card } from 'primereact/card';
 
 const RepositoryCard = ({ repo }) => {
   return (
-    <div>
-      <h3>{repo.name}</h3>
+    <Card title={repo.name}>
       <p>{repo.description}</p>
-      {/* More details here as needed */}
-    </div>
+      {/* Add more details as needed */}
+      <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
+        View Repository
+      </a>
+    </Card>
   );
 };
 

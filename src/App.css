@@ -1,0 +1,6 @@
+.button-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adjust this value to set the desired space between buttons */
+  }

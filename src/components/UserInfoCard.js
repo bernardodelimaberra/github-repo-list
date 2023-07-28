@@ -1,14 +1,14 @@
 import React from 'react';
+import { Card } from 'primereact/card';
 
 const UserInfoCard = ({ username, profileUrl }) => {
+  const header = <img alt="Avatar" src={profileUrl} style={{ width: '100px', borderRadius: '50%' }} />;
   return (
-    <div>
-      <h2>
-        <a href={profileUrl} target="_blank" rel="noopener noreferrer">
-          {username}
-        </a>
-      </h2>
-    </div>
+    <Card title={username} header={header}>
+      <a href={profileUrl} target="_blank" rel="noopener noreferrer">
+        View Profile
+      </a>
+    </Card>
   );
 };
 

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const AppHeader = () => {
-  return <header>GitHub Repository List</header>;
+  return <header></header>;
 };
 
 export default AppHeader;
