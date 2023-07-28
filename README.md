@@ -7,12 +7,9 @@ The GitHub User Repository List is a small web application that allows users to 
 ## Table of Contents
 
 - [Environment](#environment)
-- [Demo](#demo)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Environment
 
