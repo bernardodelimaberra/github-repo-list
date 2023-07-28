@@ -47,6 +47,8 @@ Enter a GitHub username in the URL path (e.g., http://localhost:3000/user/bernar
 
 The repositories will be displayed in a paginated table with the option to navigate through pages using the pagination controls.
 
+![image](https://github.com/bernardodelimaberra/github-repo-list/assets/135295173/70fdfc3d-95f9-4a00-9be1-b16298708e98)
+
 ## Technologies Used
 
 - React
